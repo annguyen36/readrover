@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# My Little Book Lib Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built on purpose of learning React. This application will store all of my books title I have on my home bookself.
+
+## Will edit the rest later --> this is a good start to test commit from Github Workspace
 
 ## Available Scripts
 

@@ -7,29 +7,43 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      books: [
-        {
-          name: "Start With Why",
-          ISBN: "1234567890"
-        },
-        {
-          name: "Leader eat last",
-          ISBN: "0987654321"
-        },
-        {
-          name: "Sweet Little lies",
-          ISBN: "23457890"
-        }
-      ]
-      
+      books: [],
+      searchField : ''
     }
   }
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => response.json())
+      .then((users) =>
+        this.setState(
+          () => {
+            return {books: users};
+          },
+          () => {
+            console.log(this.state)
+          }
+
+        ) 
+      )
+  }
+  
   render(){
+    const filterBooks = this.state.books.filter((book) => {
+      return book.name.includes(this.state.searchField)
+    })
     return (
       <div className='App'>
+        <input className='search-box' type='search' placeholder='Search Books' onChange={(event) => {
+          console.log(event.target.value)
+          const searchField = event.target.value.toLocaleLowerCase()
+          
+          this.setState(() => {
+            return { searchField }
+          })
+        }}></input>
         {
-          this.state.books.map((book) => {
-            return <h1 key={book.ISBN}>{book.name}</h1>
+          filterBooks.map((book) => {
+            return <h1>{book.name}</h1>
           })
         }
       

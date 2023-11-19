@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
 import { render } from '@testing-library/react';
+import CardList from './components/card-list/card-list';
+import SearchBox from './components/search-box/search-box';
 
 class App extends Component { 
   constructor() {
@@ -26,27 +28,24 @@ class App extends Component {
         ) 
       )
   }
-  
+  onSearchChange = (event) => {
+    console.log(event.target.value)
+    const searchField = event.target.value.toLocaleLowerCase()
+    
+    this.setState(() => {
+      return { searchField }
+    })
+  }
   render(){
-    const filterBooks = this.state.books.filter((book) => {
-      return book.name.includes(this.state.searchField)
+    const { books, searchField} = this.state;
+    const { onSearchChange } = this;
+    const filterBooks = books.filter((book) => {
+      return book.name.toLocaleLowerCase().includes(searchField)
     })
     return (
       <div className='App'>
-        <input className='search-box' type='search' placeholder='Search Books' onChange={(event) => {
-          console.log(event.target.value)
-          const searchField = event.target.value.toLocaleLowerCase()
-          
-          this.setState(() => {
-            return { searchField }
-          })
-        }}></input>
-        {
-          filterBooks.map((book) => {
-            return <h1>{book.name}</h1>
-          })
-        }
-      
+        <SearchBox onSearchHandler={onSearchChange} />
+        <CardList books={filterBooks}/>
       </div>
     )
   }

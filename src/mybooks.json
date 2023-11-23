@@ -4,7 +4,7 @@
       "name": "Start With Why",
       "author": "Simon Sinek",
       "year": 2010,
-      "cover": "<link>",
+      "cover": "https://www.businesscoachmichaeldill.com/wp-content/uploads/2015/08/start-with-why.png",
       "mydata": {
          "shelfdate": "01/2017",
          "finishdate": "05/2017",
@@ -17,12 +17,142 @@
       "name": "Tu Ma Thien",
       "author": "Nguyen Hien Le",
       "year": 2000,
-      "cover": "<link>",
+      "cover": "https://www.khaitam.com/Data/Sites/1/Product/14504/su-ky-tu-ma-thien.png",
       "mydata": {
          "shelfdate": "09/2023",
          "finishdate": "n/a",
          "rereadtime": 0,
          "note": "in_progress"
+      }
+   },
+   {
+      "id": 3,
+      "name": "Chien Quoc Sach",
+      "author": "Nguyen Hien Le",
+      "year": 1900,
+      "cover": "https://salt.tikicdn.com/cache/750x750/ts/product/5a/e4/13/63fc869685f04765c5fd860e46e2c8fc.png.webp",
+      "mydata": {
+         "shelfdate": "09/2023",
+         "finishdate": "n/a",
+         "rereadtime": "0",
+         "note": "in_progress"
+      }
+   },
+    {
+      "id": 4,
+      "name": "Steve Jobs: The Man Who Thought Different",
+      "author": "Karen Blumenthal",
+      "year": 2012,
+      "cover": "https://www.publishersweekly.com/cover/9781250014450",
+      "mydata": {
+         "shelfdate": "9/2016",
+         "finishdate": "12/2016",
+         "rereadtime": "0",
+         "note": "Steve biography"
+      }
+   },
+    {
+      "id": 5,
+      "name": "Bán đảo Ả rập - Tinh thần hồi giáo và thảm kịch dầu mỏ",
+      "author": "Nguyen Hien Le",
+      "year": 2018,
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7M_npccddScV59Wm2IzcwIiHh-wdVEznb7chX_TMurA&s",
+      "mydata": {
+         "shelfdate": "09/2023",
+         "finishdate": "n/a",
+         "rereadtime": "0",
+         "note": "in_progress"
+      }
+   },
+    {
+      "id": 6,
+      "name": "Educated",
+      "author": "Tara Westover",
+      "year": 2018,
+      "cover": "https://upload.wikimedia.org/wikipedia/en/1/1f/Educated_%28Tara_Westover%29.png",
+      "mydata": {
+         "shelfdate": "01/2022",
+         "finishdate": "05/2022",
+         "rereadtime": "0",
+         "note": "story about little girl fighting to education chance"
+      }
+   },
+    {
+      "id": 7,
+      "name": "The Intelligent Investor",
+      "author": "Benjamin Graham",
+      "year": 1949,
+      "cover": "https://m.media-amazon.com/images/I/51Xur1KZWKL.jpg",
+      "mydata": {
+         "shelfdate": "02/2023",
+         "finishdate": "n/a",
+         "rereadtime": "0",
+         "note": "quite hard to stay forcus"
+      }
+   },
+    {
+      "id": 8,
+      "name": "The Snowball: Warren Buffett and the Business of Life",
+      "author": "Alice Schroeder",
+      "year": 2008,
+      "cover": "https://i.ebayimg.com/images/g/K3oAAOSw3WJkd6oO/s-l1200.webp",
+      "mydata": {
+         "shelfdate": "05/2021",
+         "finishdate": "n/a",
+         "rereadtime": "0",
+         "note": ""
+      }
+   },
+    {
+      "id": 9,
+      "name": "Leader Eat Last",
+      "author": "Simon Sinek",
+      "year": 2014,
+      "cover": "https://m.media-amazon.com/images/I/51ejdeSXFjL.jpg",
+      "mydata": {
+         "shelfdate": "01/2017",
+         "finishdate": "05/2017",
+         "rereadtime": "0",
+         "note": "how to be a good Leader"
+      }
+   },
+    {
+      "id": 10,
+      "name": "Chien Binh Cau vong",
+      "author": "Andrea Hirata",
+      "year": 2005,
+      "cover": "https://lh5.googleusercontent.com/6yFYdSUKloU9gAkg7rAbUeAZeAmDhT6pOR_ws1xrreJg2Hyue2X883CntdoEp24VprTpSWsjdWmaLRFVgPdpp2N0IkX2cS2FStc1iSzlggPpLTlSdkLrv5PamGkWJgycZlug_89-",
+      "mydata": {
+         "shelfdate": "07/2019",
+         "finishdate": "12/2019",
+         "rereadtime": "0",
+         "note": "great story about a group os students who live at the bottom of society"
+      }
+   },
+    {
+      "id": 11,
+      "name": "The 7 Habits of Highly Effective People",
+      "author": "Stephen Covey",
+      "year": 1989,
+      "cover": "https://cdn.kobo.com/book-images/21644ec2-68d0-43e4-a9cd-9c6fb0df1620/1200/1200/False/the-7-habits-of-highly-effective-people-14.jpg",
+      "mydata": {
+         "shelfdate": "06/2020",
+         "finishdate": "10/2020",
+         "rereadtime": "1",
+         "note": "best book ever"
+      }
+   },
+    {
+      "id": 12,
+      "name": "The Everything Store",
+      "author": "Brad Stone",
+      "year": 2013,
+      "cover": "https://m.media-amazon.com/images/I/51f3DdkrwmL.jpg",
+      "mydata": {
+         "shelfdate": "2018",
+         "finishdate": "half",
+         "rereadtime": "biography of jeff",
+         "note": ""
       }
    }
 ]

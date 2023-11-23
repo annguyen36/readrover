@@ -1,5 +1,6 @@
 import { Component } from "react";
 import './card-list.styles.css';
+import './card.styles.css';
 
 const covers = require.context('./book-cover', true)
 
@@ -15,15 +16,18 @@ class CardList extends Component {
                     
                   return (
                     <div className='card-container'>
-                        <h1>{book.name}</h1>
-                        <h1>{book.id}</h1>
-                        <img alt={book.name} src={`1.jpg`}/>
+                        <div className="displayCard">
+                            <h2>{book.name}</h2>
+                            <p>{book.author}</p>
+                            <img alt={book.name} src={book.cover} width="300" height="300" className="center image-block"/>
+                        </div>
+                        <div className="hide">
+                           <p>{book.year}</p> 
+                           <p>{book.mydata.note}</p> 
+                        </div>
                     </div>
                     
-                    
-                    )
-                  
-                    
+                    )         
                 })
             }
             </div>  

@@ -4,30 +4,32 @@ import { Component } from 'react';
 import { render } from '@testing-library/react';
 import CardList from './components/card-list/card-list';
 import SearchBox from './components/search-box/search-box';
+import mybooks from './mybooks';
 
 class App extends Component { 
   constructor() {
     super();
     this.state = {
-      books: [],
+      books: mybooks,
       searchField : ''
     }
   }
-  componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((users) =>
-        this.setState(
-          () => {
-            return {books: users};
-          },
-          () => {
-            console.log(this.state)
-          }
+  // componentDidMount() {
+  //   // fetch('https://jsonplaceholder.typicode.com/users')
+  //   fetch(require('./mybooks.json'))
+  //     .then((response) => response.json())
+  //     .then((books) =>
+  //       this.setState(
+  //         () => {
+  //           return {books: books};
+  //         },
+  //         () => {
+  //           console.log(this.state)
+  //         }
 
-        ) 
-      )
-  }
+  //       ) 
+  //     )
+  // }
   onSearchChange = (event) => {
     console.log(event.target.value)
     const searchField = event.target.value.toLocaleLowerCase()

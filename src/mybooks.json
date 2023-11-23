@@ -1,0 +1,28 @@
+[
+   {
+      "id": 1,
+      "name": "Start With Why",
+      "author": "Simon Sinek",
+      "year": 2010,
+      "cover": "<link>",
+      "mydata": {
+         "shelfdate": "01/2017",
+         "finishdate": "05/2017",
+         "rereadtime": 0,
+         "note": "Good book"
+      }
+   },
+    {
+      "id": 2,
+      "name": "Tu Ma Thien",
+      "author": "Nguyen Hien Le",
+      "year": 2000,
+      "cover": "<link>",
+      "mydata": {
+         "shelfdate": "09/2023",
+         "finishdate": "n/a",
+         "rereadtime": 0,
+         "note": "in_progress"
+      }
+   }
+]

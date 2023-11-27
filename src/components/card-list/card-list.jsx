@@ -1,11 +1,11 @@
 import { Component } from "react";
 import './card-list.styles.css';
-import './card.styles.css';
+import Card from "../card/card";
 
-const covers = require.context('./book-cover', true)
+// const covers = require.context('./book-cover', true)
 
-const cover_list = covers.keys().map(image => covers(image));
-console.log(cover_list)
+// const cover_list = covers.keys().map(image => covers(image));
+// // console.log(cover_list)
 class CardList extends Component {
     render(){
         const books = this.props.books;
@@ -15,17 +15,7 @@ class CardList extends Component {
                 books.map((book) => {
                     
                   return (
-                    <div className='card-container'>
-                        <div className="displayCard">
-                            <h2>{book.name}</h2>
-                            <p>{book.author}</p>
-                            <img alt={book.name} src={book.cover} width="300" height="300" className="center image-block"/>
-                        </div>
-                        <div className="hide">
-                           <p>{book.year}</p> 
-                           <p>{book.mydata.note}</p> 
-                        </div>
-                    </div>
+                   <Card book={book}/>
                     
                     )         
                 })

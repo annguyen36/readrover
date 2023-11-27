@@ -46,6 +46,7 @@ class App extends Component {
     })
     return (
       <div className='App'>
+        <h1 className='app-title'>Readrover - My book library</h1>
         <SearchBox onSearchHandler={onSearchChange} />
         <CardList books={filterBooks}/>
       </div>
